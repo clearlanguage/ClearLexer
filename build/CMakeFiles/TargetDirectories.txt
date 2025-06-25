@@ -1,3 +1,0 @@
-/home/alanfayz/Development/C++ Projects/Lexer/build/CMakeFiles/playground.dir
-/home/alanfayz/Development/C++ Projects/Lexer/build/CMakeFiles/edit_cache.dir
-/home/alanfayz/Development/C++ Projects/Lexer/build/CMakeFiles/rebuild_cache.dir
