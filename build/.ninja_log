@@ -1,0 +1,52 @@
+# ninja log v5
+1	46	1750892025989339111	CMakeFiles/playground.dir/Lexer.cpp.o.ddi	23d76e48401a44d3
+1	38	1750890824633082901	CMakeFiles/playground.dir/Source.cpp.o.ddi	ff49470f86868241
+46	53	1750892026001339052	CMakeFiles/playground.dir/Lexer.cpp.o.modmap	89601917146c314b
+46	53	1750892026001339052	CMakeFiles/playground.dir/CXX.dd	89601917146c314b
+46	53	1750892026001339052	/home/alanfayz/Development/C++ Projects/Lexer/build/CMakeFiles/playground.dir/CXXModules.json	89601917146c314b
+46	53	1750892026001339052	CMakeFiles/playground.dir/Source.cpp.o.modmap	89601917146c314b
+53	790	1750892026730335426	CMakeFiles/playground.dir/Lexer.cpp.o	a60760e35c477f8e
+52	687	1750890825278080835	CMakeFiles/playground.dir/Source.cpp.o	b04f5762bda83f5f
+790	843	1750892026787335142	playground	2fa7617657c5360a
+2	47	1750894812363836788	CMakeFiles/playground.dir/Lexer.cpp.o.ddi	23d76e48401a44d3
+48	55	1750894812375836777	CMakeFiles/playground.dir/CXX.dd	89601917146c314b
+48	55	1750894812375836777	/home/alanfayz/Development/C++ Projects/Lexer/build/CMakeFiles/playground.dir/CXXModules.json	89601917146c314b
+48	55	1750894812375836777	CMakeFiles/playground.dir/Source.cpp.o.modmap	89601917146c314b
+48	55	1750894812375836777	CMakeFiles/playground.dir/Lexer.cpp.o.modmap	89601917146c314b
+56	830	1750894813141836063	CMakeFiles/playground.dir/Lexer.cpp.o	a60760e35c477f8e
+830	883	1750894813200836009	playground	2fa7617657c5360a
+2	61	1750894896828751039	CMakeFiles/playground.dir/Lexer.cpp.o.ddi	23d76e48401a44d3
+61	69	1750894896841751025	CMakeFiles/playground.dir/CXX.dd	89601917146c314b
+61	69	1750894896841751025	/home/alanfayz/Development/C++ Projects/Lexer/build/CMakeFiles/playground.dir/CXXModules.json	89601917146c314b
+61	69	1750894896841751025	CMakeFiles/playground.dir/Source.cpp.o.modmap	89601917146c314b
+61	69	1750894896841751025	CMakeFiles/playground.dir/Lexer.cpp.o.modmap	89601917146c314b
+69	865	1750894897629750161	CMakeFiles/playground.dir/Lexer.cpp.o	a60760e35c477f8e
+865	924	1750894897693750091	playground	2fa7617657c5360a
+1	56	1750894963557674121	CMakeFiles/playground.dir/Lexer.cpp.o.ddi	23d76e48401a44d3
+56	65	1750894963571674104	CMakeFiles/playground.dir/CXX.dd	89601917146c314b
+56	65	1750894963571674104	/home/alanfayz/Development/C++ Projects/Lexer/build/CMakeFiles/playground.dir/CXXModules.json	89601917146c314b
+56	65	1750894963571674104	CMakeFiles/playground.dir/Source.cpp.o.modmap	89601917146c314b
+56	65	1750894963571674104	CMakeFiles/playground.dir/Lexer.cpp.o.modmap	89601917146c314b
+65	834	1750894964331673186	CMakeFiles/playground.dir/Lexer.cpp.o	a60760e35c477f8e
+834	890	1750894964392673113	playground	2fa7617657c5360a
+1	43	1750895045859569669	CMakeFiles/playground.dir/Lexer.cpp.o.ddi	23d76e48401a44d3
+43	50	1750895045870569655	CMakeFiles/playground.dir/CXX.dd	89601917146c314b
+43	50	1750895045870569655	/home/alanfayz/Development/C++ Projects/Lexer/build/CMakeFiles/playground.dir/CXXModules.json	89601917146c314b
+43	50	1750895045870569655	CMakeFiles/playground.dir/Source.cpp.o.modmap	89601917146c314b
+43	50	1750895045870569655	CMakeFiles/playground.dir/Lexer.cpp.o.modmap	89601917146c314b
+50	773	1750895046585568705	CMakeFiles/playground.dir/Lexer.cpp.o	a60760e35c477f8e
+773	831	1750895046647568623	playground	2fa7617657c5360a
+2	48	1750895081968520884	CMakeFiles/playground.dir/Lexer.cpp.o.ddi	23d76e48401a44d3
+48	56	1750895081980520868	CMakeFiles/playground.dir/CXX.dd	89601917146c314b
+48	56	1750895081980520868	/home/alanfayz/Development/C++ Projects/Lexer/build/CMakeFiles/playground.dir/CXXModules.json	89601917146c314b
+48	56	1750895081980520868	CMakeFiles/playground.dir/Source.cpp.o.modmap	89601917146c314b
+48	56	1750895081980520868	CMakeFiles/playground.dir/Lexer.cpp.o.modmap	89601917146c314b
+56	817	1750895082731519835	CMakeFiles/playground.dir/Lexer.cpp.o	a60760e35c477f8e
+817	873	1750895082793519750	playground	2fa7617657c5360a
+1	45	1750895161797407406	CMakeFiles/playground.dir/Lexer.cpp.o.ddi	23d76e48401a44d3
+45	52	1750895161808407391	CMakeFiles/playground.dir/CXX.dd	89601917146c314b
+45	52	1750895161808407391	/home/alanfayz/Development/C++ Projects/Lexer/build/CMakeFiles/playground.dir/CXXModules.json	89601917146c314b
+45	52	1750895161808407391	CMakeFiles/playground.dir/Source.cpp.o.modmap	89601917146c314b
+45	52	1750895161808407391	CMakeFiles/playground.dir/Lexer.cpp.o.modmap	89601917146c314b
+52	799	1750895162546406308	CMakeFiles/playground.dir/Lexer.cpp.o	a60760e35c477f8e
+799	853	1750895162605406221	playground	2fa7617657c5360a

@@ -1,0 +1,5 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles/playground.dir/Source.cpp.o: dyndep
+
+build CMakeFiles/playground.dir/Lexer.cpp.o: dyndep
+

@@ -1,0 +1,18 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "Clang",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"dir-cur-bld" : "/home/alanfayz/Development/C++ Projects/Lexer/build",
+	"dir-cur-src" : "/home/alanfayz/Development/C++ Projects/Lexer",
+	"dir-top-bld" : "/home/alanfayz/Development/C++ Projects/Lexer/build",
+	"dir-top-src" : "/home/alanfayz/Development/C++ Projects/Lexer",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : [],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "/home/alanfayz/Development/C++ Projects/Lexer/build/CMakeFiles/playground.dir"
+}
