@@ -6,6 +6,9 @@
 #include <charconv>
 #include <exception>
 #include <math.h>
+#include <sstream>
+#include <fast_float/fast_float.h>f
+
 
 namespace clear 
 {
@@ -350,7 +353,7 @@ namespace clear
     std::pair<double, bool> Lexer::GetNumber(const std::string& string)
     {
         double value;
-        auto [ptr, ec] = std::from_chars(string.data(), string.data() + string.size(), value);
+        auto [ptr, ec] = fast_float::from_chars(string.data(), string.data() + string.size(), value);
         bool valid = ec == std::errc() && ptr == string.data() + string.size();
 
         return std::make_pair(value, valid);
