@@ -38,6 +38,8 @@ namespace clear
 
         while(m_Indents-- != 0) 
             m_Tokens.emplace_back(TokenType::EndScope, "");
+
+        m_Tokens.emplace_back(TokenType::EndOfFile, "EOF");
     }
 
     void Lexer::Eat()
@@ -288,7 +290,7 @@ namespace clear
 
         while (m_Indents > localIndents)
 		{
-            m_Tokens.push_back(Token(TokenType::EndScope, ""));
+            m_Tokens.emplace_back(TokenType::EndScope, "");
 			m_Indents--;
 		}
 
