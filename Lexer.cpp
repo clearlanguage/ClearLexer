@@ -7,7 +7,7 @@
 #include <exception>
 #include <math.h>
 #include <sstream>
-#include <fast_float/fast_float.h>f
+#include <fast_float/fast_float.h>
 
 
 namespace clear 
@@ -154,11 +154,42 @@ namespace clear
         size_t start = m_Position;
         m_Position++;
 
-        while(m_Position < m_Contents.size() && m_Contents[m_Position] != '"') 
+        std::string parsedString;
+        while (m_Position < m_Contents.size()) {
+            char c = m_Contents[m_Position];
+
+            if (c == '"') {
+                m_Position++;
+                break;
+            }
+
+            if (c == '\\') {
+                m_Position++;
+                if (m_Position >= m_Contents.size()) {
+                    break;
+                }
+
+                char next = m_Contents[m_Position];
+                switch (next) {
+                    case 'n': parsedString += '\n'; break;
+                    case 't': parsedString += '\t'; break;
+                    case 'r': parsedString += '\r'; break;
+                    case '\\': parsedString += '\\'; break;
+                    case '"': parsedString += '\"'; break;
+                    case '\'': parsedString += '\''; break;
+                    case '0': parsedString += '\0'; break;
+                    default:
+                        parsedString += next;
+                    break;
+                }
+            } else {
+                parsedString += c;
+            }
+
             m_Position++;
-        
-        m_Tokens.emplace_back(TokenType::String, m_Contents.substr(start+1, m_Position - start - 1));
-        m_Position++;
+        }
+
+        m_Tokens.emplace_back(TokenType::String, parsedString);
     }
 
     void Lexer::EatNumber()
