@@ -156,42 +156,44 @@ namespace clear
         size_t start = m_Position;
         m_Position++;
 
-        std::string parsedString;
-        while (m_Position < m_Contents.size()) {
-            char c = m_Contents[m_Position];
+        std::string lexedString;
 
-            if (c == '"') {
-                m_Position++;
+        while (m_Position < m_Contents.size()) 
+        {
+            char c = m_Contents[m_Position++];
+        
+            if (c == '"') 
                 break;
-            }
-
-            if (c == '\\') {
-                m_Position++;
-                if (m_Position >= m_Contents.size()) {
+        
+            if (c == '\\') 
+            {
+                if (m_Position >= m_Contents.size())
                     break;
+            
+                char next = m_Contents[m_Position++];
+
+                switch (next) 
+                {
+                    case 'n':  lexedString += '\n'; break;
+                    case 't':  lexedString += '\t'; break;
+                    case 'r':  lexedString += '\r'; break;
+                    case 'a':  lexedString += '\a'; break;
+                    case 'v':  lexedString += '\v'; break;
+                    case 'f':  lexedString += '\f'; break;
+                    case '\\': lexedString += '\\'; break;
+                    case '"':  lexedString += '\"'; break;
+                    case '\'': lexedString += '\''; break;
+                    case '0':  lexedString += '\0'; break;
+                    default:   lexedString += next; break;
                 }
 
-                char next = m_Contents[m_Position];
-                switch (next) {
-                    case 'n': parsedString += '\n'; break;
-                    case 't': parsedString += '\t'; break;
-                    case 'r': parsedString += '\r'; break;
-                    case '\\': parsedString += '\\'; break;
-                    case '"': parsedString += '\"'; break;
-                    case '\'': parsedString += '\''; break;
-                    case '0': parsedString += '\0'; break;
-                    default:
-                        parsedString += next;
-                    break;
-                }
-            } else {
-                parsedString += c;
+                continue;
             }
-
-            m_Position++;
+        
+            lexedString += c;
         }
 
-        m_Tokens.emplace_back(TokenType::String, parsedString);
+        m_Tokens.emplace_back(TokenType::String, lexedString);
     }
 
     void Lexer::EatNumber()
@@ -257,8 +259,10 @@ namespace clear
                 exponent *= -1;
         }
 
-        word = std::to_string(mantissa * std::pow(10, exponent));
-        m_Tokens.emplace_back(TokenType::Number, word);
+        std::ostringstream oss;
+        oss << std::setprecision(17) << (mantissa * std::pow(10, exponent));
+        
+        m_Tokens.emplace_back(TokenType::Number, oss.str());
     }
 
     void Lexer::FlushScopes()
